@@ -1,0 +1,9 @@
+<header>
+  <h1>{{ title }}</h1>
+  <app-button
+    *ngIf="isHeaderButtonAppeared('/')"
+    buttonLabel="{{ showAddTask ? 'Close' : 'Open' }}"
+    buttonColor="{{ showAddTask ? 'red' : 'green' }}"
+    (buttonOnClick)="toggleAddTask()"
+  ></app-button>
+</header>
